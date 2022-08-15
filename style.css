@@ -1,5 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+
+body{
+    background-image: url("../calculadora/pato.gif");
+    background-size: 70px;
+}
+
 main{
-    height: 400px;
-    width: 600px;
-    background-color: red;
+    height: 550px;
+    width: 350px;
+    background-color: rgb(10, 10, 10);
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 80px;
+    
+}
+section{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#Calculadora form{
+    margin: 0 3px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    gap: 5px;
+}
+
+form #Display{
+   font-family: 'Silkscreen', cursive;
+   margin:2px;
+   margin-top: 10px;
+   height: 110px;
+   border-radius: 10px;
+   text-align: end;
+   font-size: 40px;
+}
+
+#ce{
+    height: 70px;
+    margin-bottom: 10px;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    box-shadow:  2px 5px 5px #333333;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.boton{
+    height: 70px;
+    width: 70px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    box-shadow:  2px 5px 5px #333333;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.fila{
+    display: flex;
+    justify-content: space-around;
+    margin: 0.3em 0;
+    
+}
+
+.boton:active, #ce:active {
+    background-color: rgb(1, 1, 1);
+    box-shadow:  none; 
+}
+
+footer h1{
+    margin: 40px 16%; 
+    background-color: rgba(117, 117, 117, 0.39);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: 'Silkscreen', cursive;
+    transition: 0.6s;
+}
+
+footer h1:hover{
+    margin: 40px 10%; 
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 28px;
+    font-family: 'Silkscreen', cursive;
 }
