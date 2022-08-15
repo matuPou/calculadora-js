@@ -10,35 +10,35 @@
 <body>
     <main>
         <article id="Calculadora">
-            <input id="Display" type="text">
+            <input type="text" id= "Display" name="ABC" value="" readonly>
             <div class="fila">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button class="operacion">÷</button>
+                <button onclick="consola(7)">7</button>
+                <button onclick="consola(8)">8</button>
+                <button onclick="consola(9)">9</button>
+                <button class="operacion" onclick="consola('÷')">÷</button>
             </div>
             <div class="fila">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button class="operacion">x</button>
+                <button onclick="consola(4)">4</button>
+                <button onclick="consola(5)">5</button>
+                <button onclick="consola(6)">6</button>
+                <button class="operacion" onclick="consola('*')">x</button>
             </div>
             <div class="fila">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button class="operacion">-</button>
+                <button onclick="consola(1)">1</button>
+                <button onclick="consola(2)">2</button>
+                <button onclick="consola(3)">3</button>
+                <button class="operacion" onclick="consola('-')">-</button>
             </div>
             <div class="fila">
-                <button>0</button>
-                <button>.</button>
-                <button>=</button>
-                <button class="operacion">+</button>
+                <button onclick="consola(0)">0</button>
+                <button onclick="consola('.')">.</button>
+                <button onclick="consola('=')">=</button>
+                <button class="operacion" onclick="consola('+')">+</button>
             </div>
         </article>
     </main>
 
-    <footer>Digitalers 2022 - [COMPLETAR CON NOMBRE DE ALUMNO/S]</footer>
+    <footer>Digitalers 2022 - Mateo Agustin Pou</footer>
     <script src="main.js"></script>
 </body>
 </html>
